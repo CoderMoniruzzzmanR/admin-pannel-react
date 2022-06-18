@@ -9,15 +9,16 @@ body{
    outline: 0;
 }
 
-.app{
-   display: flex;
-   flex-direction: row;
-}
+// .app{
+//    display: flex;
+//    flex-direction: row;
+// }
 
 .wrapper{
    height: 100vh;
    order: 3;
    flex: 1 1;
-   max-width: calc(100% - 260px);
-   margin-left: 260px;
+   max-width: calc(100% - 270px);
+   margin-left: 270px;
+   padding: 0px 25px;
 }

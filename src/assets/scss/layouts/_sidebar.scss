@@ -8,8 +8,8 @@
 	z-index: 100;
 	max-height: 100%;
 	overflow-y: auto;
-   max-width: 260px;
-   flex : 0 0 260px;
+   max-width: 270px;
+   flex : 0 0 270px;
 	width: 100%;
    order: 1;
    background-color: #0f172a;
@@ -19,29 +19,168 @@
 	top: 0;
 	bottom: 0;
 	left: 0;
-   max-width: 260px;
+   max-width: 270px;
    width: 100%;
    background-color: #0f172a;
-   border-bottom: 1px dashed #131d35;
+   border-bottom: 1px solid #131d35;
    display: flex;
    align-items: center;
    height: 70px;
    padding: 5px 25px;
+   z-index: 999;
 }
 .sidebar-inner {
 	position: relative;
 	overflow-y: hidden;
+   padding: 25px 15px;
+   z-index: 99;
+}
+.main-menu{
+   flex-direction: column;
+   width: 100%;
+   .accordion{
+      background-color: transparent;
+      .accordion-item{
+         background-color: transparent;
+         border: 0px;
+         .accordion-button{
+           background: rgba(204,209,224,.08);
+           border-radius: 10px;
+           border: 1px solid #4c5680;
+           display: inline-block;
+           &:focus{
+            box-shadow: none;
+           }
+           .arrow{
+               margin-left: auto;
+               float: right;
+               transition: all linear 0.3s;
+               .icon{
+                  margin-right: -8px;
+                  font-size: 20px;
+               }
+           }
+            &::after{
+               transform: rotate(270deg);  
+               color: #9da2af;
+               display: none;
+            }
+            &.collapsed {
+               background-color: transparent;
+               border: 0px;
+            }
+            &:not(.collapsed){
+               box-shadow: none;
+               &::after{
+                  transform: rotate(360deg);
+               }
+               .arrow{
+                  transform: rotate(90deg);
+              }
+            }
+          
+         }
+         .accordion-collapse {
+            .accordion-body{
+               padding: 10px 0px 0px 0px;
+               .nav-item{
+                  margin-bottom: 0px;
+                  padding-left: 10px;
+                  .multi-menu-icon{
+                     margin-top: -5px;
+                     font-size: 12px;
+                     margin-right: 7px;
+                  }
+                  &.active{
+                     .nav-link{
+                        background: transparent;
+                        border-radius: 0px;
+                        border: 0px;
+                     }
+                     .multi-menu-icon{
+                        color: #6259ca;
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+.nav-item{
+   margin-bottom: 10px;
+   font-size: 16px;
+   .nav-link{
+      color : #9da2af;
+      padding: 10px 10px;
+   }
+   &.active{
+      .nav-link{
+         background: rgba(204,209,224,.08);
+         border-radius: 10px;
+         border: 1px solid #4c5680;
+      }
+      .icon{
+         color: #6259ca;
+      }
+   }
+  
+   .icon{
+      margin-top: -5px;
+      font-size: 20px;
+      margin-right: 10px;
+   }
 }
 
 .sidebar-navbar-user{
    position: fixed;
    bottom: 0;
    overflow: hidden;
-   z-index: 11;
-   max-width: 260px;
+   z-index: 999;
+   max-width: 270px;
    width: 100%;
    padding: 20px 25px;
    display: flex;
    align-items: center;
-   background-color: red;
+   background-color: #0f172a;
+   border: none;
+   border-top: 1px solid #131d35;
+   height: 70px;
+   &:focus{
+      box-shadow: none;
+      border: none;
+      border-top: 1px solid #131d35;
+   }
+   .user{
+      display: inline-flex;
+      align-items: center;
+      img {
+         width: 40px;
+         height: 40px;
+         border-radius:15px;
+      }
+      .user-info {
+         margin-left: 10px;
+         line-height: 14px;
+         text-align: left;
+         h3 {
+            text-transform: capitalize;
+            font-size: 16px;
+            margin-bottom: 0px;
+            color: #ccd1e0;
+         }
+         span {
+            text-transform: capitalize;
+            font-size: 13px;
+            color: #9da2af;
+         }
+      }
+   }
+   .expand-icon{
+      text-align: center;
+      margin-left: auto;
+      color: #9da2af;
+      font-size: 20px;
+   }
 }
