@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1605" height="328" viewBox="0 0 1605 328">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #6259ca;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        font-size: 87.403px;
+        fill: #fff;
+        font-family: Cambria;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M12.428,129.309L62.144,1.439H322.583L1.417,315.561,207.8,47.845S80.493,49.965,81.624,49.9C82.375,49.855,12.428,129.309,12.428,129.309Z"/>
+  <path id="Shape_1_copy" data-name="Shape 1 copy" class="cls-1" d="M347.477,195.493l-46.8,127.351L35.443,326.271,343.872,13.8,141.537,282.661l133.048-6.227C273.73,276.505,347.477,195.493,347.477,195.493Z"/>
+  <text id="Zenith" class="cls-2" transform="translate(439.531 300.124) scale(4.531)">Zenith</text>
+</svg>

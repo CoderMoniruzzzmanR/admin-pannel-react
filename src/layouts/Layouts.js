@@ -6,16 +6,16 @@ import Sidebar from './Sidebar';
 
 export default () => {
   return (
-    <>
+    <div className="app">
       <Sidebar/>
-      <div className="main-body">
+      <div className="wrapper min-vh-100 d-flex flex-column bg-light">
          <Header/>
          <main className="main-content flex-grow-1">
             <Outlet/>
          </main>
          <Footer/>
       </div>
-    </>
+    </div>
   )
 };
 

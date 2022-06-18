@@ -5,7 +5,7 @@ import { CSSTransition } from 'react-transition-group';
 import { ARouter } from "../routes";
 import { Nav, Badge, Button, Dropdown, Accordion, Navbar } from 'react-bootstrap';
 
-import LogoImg from "../assets/img/logo.svg";
+import LogoImg from "../assets/img/logo4.svg";
 import Logo from '../components/Logo';
 
 
@@ -82,56 +82,57 @@ function Sidebar() {
          </Navbar.Toggle>
       </Navbar>
       {/* Sidebar */}
-      <div className={`${showClass} collapse sidebar d-md-block bg-primary text-white`}>
-         {/* Sidebar Logo*/}
-         <div className="sidebar-logo">
-            <Logo 
-               className="applogo img-fluid"
-               src ={LogoImg}
-               alt = "sidebar logo"
-               width = "120"
-               height = "60"
-               />
-         </div>
-         <CSSTransition timeout={300} in={show} classNames="sidebar-transition">
-            <SimpleBar>
-               <div className="sidebar-inner px-4 pt-3">
-                  {/* Sidebar Menu*/}
-                  <Nav className="flex-column pt-3 pt-md-0">
-
-                     <NavItem title="Overview" link={ARouter.DashboardOverview.path} icon="$" />
-
-                     <CollapsableNavItem eventKey="tables/" title="Tables" icon="$">
-                        <NavItem title="Bootstrap Table" link={ARouter.BootstrapTables.path} />
-                     </CollapsableNavItem>
-
-                     <NavItem external title="Plugins" link="https://demo.themesberg.com/volt-pro-react/#/plugins/datatable" target="_blank" badgeText="Pro" icon="$" />
-                     
-                     <Dropdown.Divider className="my-3 border-indigo" />
-
-                     <CollapsableNavItem eventKey="documentation/" title="Getting Started" icon="$">
-                        <NavItem title="Overview" link={ARouter.DocsOverview.path} />
-                        <NavItem title="Download" link={ARouter.DocsDownload.path} />
-                        <NavItem title="Quick Start" link={ARouter.DocsQuickStart.path} />
-                     </CollapsableNavItem>
-
-                     <CollapsableNavItem eventKey="user/" title="User Started" icon="$">
-                        <NavItem title="User" link={ARouter.UserList.path} />
-                     </CollapsableNavItem>
-
-                     <CollapsableNavItem eventKey="components/" title="Components" icon="$">
-                        <NavItem title="Accordion" link={ARouter.Accordions.path} />
-                        <NavItem title="Alerts" link={ARouter.Alerts.path} />
-                        <NavItem title="Badges" link={ARouter.Badges.path} />
-                     </CollapsableNavItem>
-
-                  </Nav>
+      <CSSTransition timeout={300} in={show} classNames="sidebar-transition">
+         <SimpleBar className={`${showClass} collapse sidebar d-md-block text-white`}>
+            {/* Sidebar Logo*/}
+            <div className="sidebar-header">
+               <div className='sidebar-logo'>
+                  <Link to={ARouter.DashboardOverview.path}>
+                     <Logo 
+                     className="applogo img-fluid"
+                     src ={LogoImg}
+                     alt = "sidebar logo"
+                     width = "120"
+                     height = "60"
+                     />
+                  </Link>
                </div>
-            </SimpleBar>
-         </CSSTransition>
-         {/* Sidebar Footer*/}
-         <div>footer</div>
-      </div>
+            </div>
+            <div className="sidebar-inner px-4 pt-3">
+               {/* Sidebar Menu*/}
+               <Nav className="flex-column pt-3 pt-md-0">
+
+                  <NavItem title="Overview" link={ARouter.DashboardOverview.path} icon="$" />
+                 
+                  <CollapsableNavItem eventKey="tables/" title="Tables" icon="$">
+                     <NavItem title="Bootstrap Table" link={ARouter.BootstrapTables.path} />
+                  </CollapsableNavItem>
+                 
+                  <NavItem external title="Plugins" link="https://demo.themesberg.com/volt-pro-react/#/plugins/datatable" target="_blank" badgeText="Pro" icon="$" />
+                 
+                  <Dropdown.Divider className="my-3 border-indigo" />
+                  <CollapsableNavItem eventKey="documentation/" title="Getting Started" icon="$">
+                     <NavItem title="Overview" link={ARouter.DocsOverview.path} />
+                     <NavItem title="Download" link={ARouter.DocsDownload.path} />
+                     <NavItem title="Quick Start" link={ARouter.DocsQuickStart.path} />
+                  </CollapsableNavItem>
+                 
+                  <CollapsableNavItem eventKey="user/" title="User Started" icon="$">
+                     <NavItem title="User" link={ARouter.UserList.path} />
+                  </CollapsableNavItem>
+                 
+                  <CollapsableNavItem eventKey="components/" title="Components" icon="$">
+                     <NavItem title="Accordion" link={ARouter.Accordions.path} />
+                     <NavItem title="Alerts" link={ARouter.Alerts.path} />
+                     <NavItem title="Badges" link={ARouter.Badges.path} />
+                  </CollapsableNavItem>
+                  
+               </Nav>
+            </div>
+            {/* Sidebar Footer*/}
+            <div className="sidebar-navbar-user">footer</div>
+         </SimpleBar>
+      </CSSTransition>
    </>
   )
 }

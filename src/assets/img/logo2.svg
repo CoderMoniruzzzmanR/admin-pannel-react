@@ -3,10 +3,14 @@
     <style>
       .cls-1 {
         font-size: 72px;
-        fill: #fff;
+        fill: #6138bd;
         font-family: Broadway;
+      }
+
+      .cls-2 {
+        fill: #161c2d;
       }
     </style>
   </defs>
-  <text id="Zenith" class="cls-1" transform="matrix(0.645, 0, 0, 0.645, -0.948, 32.224)">Zenith</text>
+  <text id="Zenith" class="cls-1" transform="matrix(0.645, 0, 0, 0.645, -0.948, 32.224)">Z<tspan class="cls-2">enith</tspan></text>
 </svg>
