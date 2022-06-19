@@ -1,14 +1,14 @@
 import React from 'react'
 import {Outlet} from "react-router-dom";
-import Footer from './Footer';
-import Header from './Header';
-import Sidebar from './Sidebar';
+import Footer from './Footer/Footer';
+import Header from './Navbar/Header';
+import Sidebar from './Sidebar/Sidebar';
 
 export default () => {
   return (
-    <div className="app">
+    <div className="app semi-light">
       <Sidebar/>
-      <div className="wrapper min-vh-100 d-flex flex-column bg-light">
+      <div className="wrapper min-vh-100 d-flex flex-column">
          <Header/>
          <main className="main-content flex-grow-1">
             <Outlet/>

@@ -1,0 +1,82 @@
+@import '../component/dropdown';
+
+.navigation-full{
+   border-bottom: 1px solid var(--base-border);
+   background-color: var(--navbar-bg);
+}
+.toolbar-wrapper{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0px 10px;
+   height: 70px;
+   ul{
+      margin: 0px;
+      list-style: none;
+      padding: 0px;
+      display: flex;
+      align-items: center;
+      li{
+         margin-left: 15px;
+         &:first-child{
+            margin-left: 0px;
+         }
+      }
+   }
+}
+
+.nav-left{
+   .menu-icon{
+      .collape-btn{
+         background-color: var(--bg-color);
+         border: none;
+         width: 40px;
+         height: 40px;
+         text-align: center;
+         line-height: 40px;
+         margin-left: auto;
+         border-radius: 8px;
+         color: var(--base-icon-color);
+      }
+   }
+   .dropdown{
+      @include drop-menu;
+      .dropdown-toggle{
+         border-radius: 8px;
+         background-color: var(--base-color);
+         border: 1px solid var(--base-color);
+         font-size: 14px;
+         font-weight: 500;
+         font-family: $poppins_font_family;
+         &:focus{
+            box-shadow: none;
+            border: 1px solid var(--base-color);
+            background-color: var(--base-color);
+         }
+      }
+      .dropdown-menu{
+         border: none;    
+         box-shadow: 0 2px 30px rgb(0 0 0 / 8%);
+         margin-top: 10px;
+         transition-timing-function: ease-out;
+         transition: all ease-out 0.1s;
+         &.show{
+            margin-top: 0px;
+         }
+         .dropdown-item{
+            font-size: 14px;
+            font-family: $poppins_font_family;
+            color: var(--base-font-color);
+            &:hover{
+               background-color: var(--base-drop-list-hover);
+               color : var(--base-color);
+            }
+            &:focus{
+               box-shadow: none;
+               background-color: var(--base-color);
+               color : var( --white);
+            }
+         }
+      }
+   }
+}
