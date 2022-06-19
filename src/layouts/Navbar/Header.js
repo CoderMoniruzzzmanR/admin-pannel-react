@@ -1,7 +1,7 @@
 import React from 'react'
-import {Dropdown} from 'react-bootstrap';
 import Icon from '../../shared/Icon';
-
+import CreateButton from './CreateButton';
+import HeaderLeft from './HeaderLeft';
 function Header() {
   return (
    <div className="navigation-full">
@@ -15,26 +15,9 @@ function Header() {
                            <Icon name="menu"/>
                         </button>
                      </li>
-                     <li>
-                        <Dropdown>
-                           <Dropdown.Toggle>
-                              <span>Create <Icon name="cheveron-down"/></span>
-                           </Dropdown.Toggle>
-                           <Dropdown.Menu>
-                              <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                              <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                              <Dropdown.Item href="#/action-3">Something else here</Dropdown.Item>
-                              <Dropdown.Divider />
-                              <Dropdown.Item href="#/action-3">Separated link</Dropdown.Item>
-                           </Dropdown.Menu>
-                        </Dropdown>
-                     </li>
+                     <CreateButton/>
                   </ul>
-                  <ul className="nav-right">
-                     <li>left side 
-                        
-                     </li>
-                  </ul>
+                  <HeaderLeft/>
                </div>
             </div>
          </div>
@@ -44,23 +27,3 @@ function Header() {
 }
 
 export default Header
-
-{/* <Icon name="message" 
-className="icon"
-/>
-<Icon name="notification" 
-className="icon"
-/>
-<Icon name="setting" 
-className="icon"
-/>
-<Icon name="more" 
-className="icon"
-/>
-
-<Icon name="search" 
-className="icon"
-/>
-<Icon name="user" 
-className="icon"
-/> */}

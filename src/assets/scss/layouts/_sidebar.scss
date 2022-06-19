@@ -247,7 +247,7 @@
             color: var(--sidebar-drop-item-color);
             border-radius: 0.95rem;
             &:hover, &:focus{
-            background-color: var(--sidebar-user-item-bgcolor);
+               background-color: var(--sidebar-user-item-bgcolor);
             }
          }
       }

@@ -20,5 +20,15 @@
       .dropdown-divider{
          border-top: 1px solid var(--base-border);
       }
+      .dropdown-item{
+         .icon{
+            .z-icon{
+               margin-right: 0px;
+               width: 16px;
+               height: 16px;
+            }
+         }
+      }
    }
+  
 }
