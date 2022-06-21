@@ -3,11 +3,11 @@ import Icon from '../../shared/Icon';
 
 function NavNotification() {
   return (
-    <div>
+    <li>
       <Icon name="notification" 
       className="icon"
       />
-    </div>
+    </li>
   )
 }
 

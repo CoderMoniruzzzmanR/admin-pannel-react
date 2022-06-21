@@ -3,14 +3,14 @@ import Icon from '../../shared/Icon';
 
 function NavDarkLight() {
   return (
-    <div>
+    <li>
        <Icon name="sun" 
       className="icon"
       />
-        <Icon name="moon" 
+        {/* <Icon name="moon" 
       className="icon"
-      />
-    </div>
+      /> */}
+    </li>
   )
 }
 

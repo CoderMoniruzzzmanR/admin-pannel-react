@@ -1,0 +1,9 @@
+@mixin list-inline {
+   display: flex;
+   li{
+      margin-left: 15px;
+      &:first-child{
+         margin-left: 15px;
+      }
+   }
+}

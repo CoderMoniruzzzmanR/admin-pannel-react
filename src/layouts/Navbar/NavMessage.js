@@ -3,11 +3,11 @@ import Icon from '../../shared/Icon';
 
 function NavMessage() {
   return (
-    <div>
+    <li>
        <Icon name="message" 
          className="icon"
          />
-    </div>
+    </li>
   )
 }
 

@@ -1,26 +1,64 @@
-@mixin drop-menu{
+@import './btn';
+
+.dropdown{
    .dropdown-toggle{
       &::after{
          display: none;
       }
+   }
+}
+
+@mixin drop-menu{
+   .dropdown-toggle{
       .z-icon{
          margin-right: -6px;
+         width: 15px;
+         height: 15px
       }
    }
    .dropdown-menu{
       box-shadow: 0 2px 30px rgb(0 0 0 / 8%);
+      border: none;    
       display: block;
       visibility: hidden;
       opacity: 0;
+      padding: 0px;
+      border-radius: 10px;
+      margin-top: 30px;
+      transition-timing-function: ease-out;
+      transition: all ease-out 0.1s;
       &.show{
          display: block;
          visibility: visible;
          opacity: 1;
+         margin-top: 13px;
       }
       .dropdown-divider{
          border-top: 1px solid var(--base-border);
       }
       .dropdown-item{
+         font-size: 14px;
+         font-family: $poppins_font_family;
+         color: var(--base-font-color);
+         text-transform: capitalize;
+         padding: 8px 15px;
+         &:first-child{
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+         }
+         &:last-child{
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+         }
+         &:hover{
+            background-color: var(--base-drop-list-hover);
+            color : var(--base-color);
+         }
+         &:focus{
+            box-shadow: none;
+            background-color: var(--base-color);
+            color : var( --white);
+         }
          .icon{
             .z-icon{
                margin-right: 0px;
@@ -29,6 +67,38 @@
             }
          }
       }
+      .drop-heading{
+         padding: 10px 15px;
+         border-bottom: 1px solid var(--base-border);
+         font-family: $poppins_font_family;
+         border-top-left-radius: 10px;
+         border-top-right-radius: 10px;
+         h4{
+            font-size: 16px;
+            color: var(--base-heading-font-color);
+         }
+      }
+      .drop-footer{
+         border-top: 1px solid var(--base-border);
+         border-bottom-left-radius: 10px;
+         border-bottom-right-radius: 10px;
+         padding: 10px 15px;
+         text-align: center;
+         .dropdown-item{
+            border-radius: 10px !important;
+            padding: 0px 15px;
+            line-height: 40px;
+            text-align: center;
+            display: inline-block;
+            width: max-content;
+            @include base-btn;
+            .icon{
+               .z-icon{
+                  margin-top: 0px;
+                  margin-right: -3px;
+               }
+            }
+         }
+      }
    }
-  
 }

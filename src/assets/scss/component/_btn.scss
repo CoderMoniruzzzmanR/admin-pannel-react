@@ -1,0 +1,19 @@
+@mixin base-btn{
+   background-color: var(--base-bg-btn);
+   color: var(--base-color);
+   font-size: 14px;
+   font-weight: 500;
+   font-family: $poppins_font_family;
+   padding: 10px 15px;
+   line-height: 1.2;
+   border-radius: 10px;
+   &:focus{
+      box-shadow: none;
+      border: none;
+   }
+}
+
+@mixin base-icon-btn{
+
+}
+

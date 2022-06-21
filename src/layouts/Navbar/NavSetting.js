@@ -3,12 +3,11 @@ import Icon from '../../shared/Icon';
 
 function NavSetting() {
   return (
-    <div>
+    <li>
       <Icon name="setting" 
       className="icon"
       />
-   </div>
+   </li>
   )
 }
-
 export default NavSetting

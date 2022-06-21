@@ -3,11 +3,9 @@ import Icon from '../../shared/Icon';
 
 function NavSearch() {
   return (
-    <div>
-      <Icon name="search" 
-      className="icon"
-      />
-    </div>
+    <li>
+      <button><Icon name="search" className="icon"/></button>
+    </li>
   )
 }
 
