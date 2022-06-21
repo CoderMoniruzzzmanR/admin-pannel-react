@@ -65,6 +65,11 @@
                width: 16px;
                height: 16px;
             }
+            &.img-icon{
+               img{
+                  width: 20px;
+               }
+            }
          }
       }
       .drop-heading{
@@ -91,6 +96,7 @@
             text-align: center;
             display: inline-block;
             width: max-content;
+           
             @include base-btn;
             .icon{
                .z-icon{
@@ -100,5 +106,47 @@
             }
          }
       }
+   }
+}
+@mixin drop-content-button{
+   display: flex;
+   align-items: center;
+   background-color: transparent;
+   border: none;
+   padding: 0px;
+   color: var(--base-heading-font-color);
+   &:focus{
+      box-shadow: none;
+      border: none;
+   }
+   .image-box, .infos{
+      margin-right: 10px;
+      text-align: left;
+      line-height: 1.2;
+   }
+   img {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+   }
+   strong {
+      text-transform: capitalize;
+      font-size: 14px;
+      margin-bottom: 0px;
+      font-weight: 600;
+      color: var(--base-heading-font-color);
+      display: block;
+      font-family: $poppins_font_family;
+   }
+   span {
+      text-transform: capitalize;
+      font-size: 12px;
+      color: var(--base-font-color);
+      font-weight: 500;
+   }
+   .z-icon{
+      margin-right: -4px;
+      width: 15px;
+      height: 15px
    }
 }
