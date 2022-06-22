@@ -1,0 +1,25 @@
+@mixin badge-primary($bg, $color, $rad) {
+   background-color: $bg;
+   color: $color;
+   border-radius: $rad;
+   display: inline-block;
+   line-height: 1;
+   padding: 0.3rem 0.5rem;
+   text-align: center;
+   vertical-align: baseline;
+   font-size: 12px;
+   font-weight: 600;
+   font-family: $poppins_font_family;
+   text-decoration: none;
+   &:hover{
+      background-color: $bg;
+      color: $color;
+   }
+   &:focus{
+      background-color: $bg;
+      color: $color;
+   }
+}
+.badge-primary{
+   @include badge-primary(var(--bg-light-primary),var(--bg-primary),10px);
+}

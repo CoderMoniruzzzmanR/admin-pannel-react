@@ -4,7 +4,7 @@
    font-size: 14px;
    font-weight: 500;
    font-family: $poppins_font_family;
-   padding: 10px 15px;
+   padding: 0px 15px;
    border-radius: 10px;
    height: 40px;
    &:focus{
@@ -35,3 +35,35 @@
    }
 }
 
+@mixin btnPrimary($bg, $color, $bColor) {
+   background-color: $bg;
+   @if($bColor == none){
+      border: none;
+   }
+   @if($bColor != none){
+      border: 1px solid $bColor
+   }
+   color: $color;
+   font-size: 14px;
+   font-family: $poppins_font_family;
+   line-height: 36px;
+   height: auto;
+   &:focus{
+      box-shadow: none;
+      @if($bColor == none){
+         border: none;
+      }
+      @if($bColor != none){
+         border: 1px solid $bColor
+      }
+   }
+   .icon{
+      margin-right: 0px;
+      width: 16px;
+      height: 16px;
+      color: $color;
+   }
+}
+.btn-basic{
+   @include btnPrimary(var(--bg-primary), var(--btn-primary-color), var(--bg-primary));
+}
