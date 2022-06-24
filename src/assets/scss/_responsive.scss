@@ -1,0 +1,47 @@
+@mixin devices ($breakpoint) {
+   @if $breakpoint == extra-large {    
+      @media only screen and (max-width: 1440px) {
+      @content;
+      }
+   }
+   
+   @if $breakpoint == large-device {    
+      @media only screen and (max-width: 1366px) {
+      @content;
+      }
+   }
+   @if $breakpoint == desktop {    
+      @media only screen and (max-width: 1280px) {
+      @content;
+      }
+   }
+
+   @if $breakpoint == laptop {    
+      @media only screen and (max-width: 1200px) {
+      @content;
+      }
+   }
+
+   @if $breakpoint == notebook {    
+      @media only screen and (max-width: 1024px) {
+      @content;
+      }
+   }
+
+   @if $breakpoint == tablet {    
+      @media only screen and (max-width: 768px) {
+      @content;
+      }
+   }
+   
+   @if $breakpoint == smartmobile {
+      @media only screen and (max-width: 640px) {
+      @content;
+      }
+   }
+   @if $breakpoint == smallmobile {
+      @media only screen and (max-width: 480px) {
+      @content;
+      }
+   }
+}

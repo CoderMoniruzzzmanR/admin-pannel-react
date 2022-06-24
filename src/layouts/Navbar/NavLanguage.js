@@ -18,7 +18,7 @@ function NavLanguage() {
             <div className="infos">
                <strong>Eng</strong>
             </div>
-            <div>
+            <div className='arrow'>
                <Icon name="cheveron-down"/>
             </div>
          </Dropdown.Toggle>

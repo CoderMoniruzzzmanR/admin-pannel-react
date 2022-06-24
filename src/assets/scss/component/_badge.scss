@@ -23,3 +23,56 @@
 .badge-primary{
    @include badge-primary(var(--bg-light-primary),var(--bg-primary),10px);
 }
+
+@mixin circle($bg,$shadow) {
+   width: 7px;
+   height: 7px;
+   border-radius: 50%;
+   background-color:  $bg;
+   box-shadow: $shadow 0px 0px 0px 2px;
+}
+
+@mixin animationCircle($bg,$animationbg) {
+   display: block;
+   top: 7px;
+   right: 8px;
+   width: 7px;
+   height: 7px;
+   border-radius: 50%;
+   background-color: $bg;
+   animation: pulse-orange 2s infinite;
+   @keyframes pulse-orange {
+      0% {
+         box-shadow: 0 0 0 $animationbg;
+      }
+      70% {
+          box-shadow: 0 0 0 8px rgba(247, 45, 102, 0);
+      }
+      100% {
+          box-shadow: 0 0 0 0 rgba(247, 45, 102, 0);
+      }
+   }
+}
+
+@mixin icon-primary($bg, $border, $color, $rad, $width, $height, $iconwidth, $iconheight,$iconmargin, $hoverBg, $hoverColor, $hoverBoder) {
+   width: $width;
+   height: $height;
+   line-height: $height;
+   text-align: center;
+   border-radius: $rad;
+   display: inline-block;
+   background-color: $bg;
+   color: $color;
+   border: $border;
+   &:hover,&:focus{
+      background-color: $hoverBg;
+      color: $hoverColor;
+      border: $hoverBoder;
+      box-shadow: none;
+   }
+   .icon,.z-icon{
+      width: $iconwidth;
+      height:  $iconheight;
+      margin: $iconmargin;
+   }
+}

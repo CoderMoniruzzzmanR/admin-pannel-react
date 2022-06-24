@@ -4,7 +4,6 @@ import NavDarkLight from './NavDarkLight'
 import NavLanguage from './NavLanguage'
 import NavMessage from './NavMessage'
 import NavNotification from './NavNotification'
-import NavSearch from './NavSearch'
 import NavUser from './NavUser'
 
 function HeaderLeft() {
@@ -16,7 +15,6 @@ function HeaderLeft() {
          />
       </div>
       <ul className="nav-right">
-         <NavSearch/>
          <NavLanguage/>
          <NavDarkLight/>
          <NavMessage/>

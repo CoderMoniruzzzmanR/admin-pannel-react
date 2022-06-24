@@ -2,7 +2,9 @@ import React from 'react'
 import Icon from '../../shared/Icon';
 import CreateButton from './CreateButton';
 import HeaderLeft from './HeaderLeft';
-function Header() {
+import MobileNav from './MobileNav';
+import NavSearch from './NavSearch';
+function Header({onToggleClick, showClass, basehref}) {
   return (
    <div className="navigation-full">
       <div className="container-fluid">
@@ -10,12 +12,9 @@ function Header() {
             <div className="col-lg-12">
                <div className="toolbar-wrapper">
                   <ul className="nav-left">
-                     <li className="menu-icon">
-                        <button className="collape-btn">
-                           <Icon name="menu"/>
-                        </button>
-                     </li>
+                     <MobileNav onToggleClick={onToggleClick} showClass={showClass} basehref={basehref}/>
                      <CreateButton/>
+                     <NavSearch/>
                   </ul>
                   <HeaderLeft/>
                </div>

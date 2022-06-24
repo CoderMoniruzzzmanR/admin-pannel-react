@@ -1,3 +1,4 @@
+@import '../responsive';
 
 // .app{
 //    display: flex;
@@ -11,6 +12,7 @@
    max-width: calc(100% - 270px);
    margin-left: 270px;
    // padding: 0px 25px;
+  
 }
 .avatar{
    position: relative;
@@ -25,4 +27,9 @@
       right: 0px;
    }
 }
-
+@include devices(laptop) {
+   .wrapper{
+      max-width: calc(100% - 0px);
+      margin-left: 0px;
+   }
+}

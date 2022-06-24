@@ -1,0 +1,18 @@
+@mixin BasicInput($width, $height, $boderRedius,$borderColor,$color, $hoverBoder, $padding) {
+   width: $width;
+   height: $height;
+   font-size: 14px;
+   font-weight: 500;
+   font-family: $poppins_font_family;
+   border: $borderColor;
+   padding: $padding;
+   border-radius: $boderRedius;
+   color: $color;
+   &:focus{
+      box-shadow: none;
+      border: $hoverBoder;
+   }
+   &:hover{
+      border: $hoverBoder;
+   }
+}

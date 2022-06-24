@@ -9,13 +9,9 @@ import LogoImg from "../../assets/img/logo4.svg";
 // import SidebarFooter from './SidebarFooter';
 import Icon from '../../shared/Icon';
 
-function Sidebar() {
+function Sidebar({showClass, show, onClickSet}) {
    const location = useLocation();
-  const { pathname } = location;
-  const [show, setShow] = useState(false);
-  const showClass = show ? "show" : "";
-
-  const onCollapse = () => setShow(!show);
+   const { pathname } = location;
 
   const CollapsableNavItem = (props) => {
    const { eventKey, title, icon, children = null } = props;
@@ -49,7 +45,7 @@ function Sidebar() {
    const linkProps = external ? { href: link } : { as: Link, to: link };
 
    return (
-     <Nav.Item className={navItemClassName} onClick={() => setShow(false)}>
+     <Nav.Item className={navItemClassName} onClick={onClickSet}>
        <Nav.Link {...linkProps} target={target} className={classNames}>
          <span>
            <span>{icon}</span>
@@ -66,24 +62,8 @@ function Sidebar() {
 
   return (
    <>
-      {/* Mobile Navigation */}
-      <Navbar expand={false} collapseOnSelect variant="dark" className="navbar-theme-primary px-4 d-md-none">
-         <Navbar.Brand className="me-lg-5" as={Link} to={ARouter.DashboardOverview.path}>
-            <Logo 
-               className="applogo img-fluid"
-               src ={LogoImg}
-               alt = "sidebar logo"
-               width = "40"
-               height = "60"
-            />
-         </Navbar.Brand>
-         <Navbar.Toggle as={Button} aria-controls="main-navbar" onClick={onCollapse}>
-            {showClass? (<>hi</>) : (<span className="navbar-toggler-icon"/>)}
-         </Navbar.Toggle>
-      </Navbar>
-      {/* Sidebar */}
       <CSSTransition timeout={300} in={show} classNames="sidebar-transition">
-         <SimpleBar className={`${showClass} collapse sidebar d-md-block text-white`}>
+         <SimpleBar className={`${showClass} collapse sidebar`}>
             {/* Sidebar Logo*/}
             <div className="sidebar-header">
                <div className='sidebar-logo'>
@@ -97,6 +77,7 @@ function Sidebar() {
                      />
                   </Link>
                </div>
+               <span className="sidebar-close" onClick={onClickSet}><Icon name="cross"/></span>
             </div>
             <div className="sidebar-inner">
                {/* Sidebar Menu*/}

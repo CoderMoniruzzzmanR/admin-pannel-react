@@ -10,12 +10,13 @@ function NavUser() {
          <Dropdown.Toggle>
             <div className="image-box">
               <img className="img-fluid" src={hero} alt='hero image'/>
+              <span className="active-badge"></span>
             </div>
             <div className="infos">
                <strong>Alex Hunter</strong>
                <span>Admin</span>
             </div>
-            <div>
+            <div className='arrow'>
                <Icon name="cheveron-down"/>
             </div>
          </Dropdown.Toggle>
