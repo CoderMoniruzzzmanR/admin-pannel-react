@@ -24,12 +24,13 @@
       animation-duration: .3s;
       animation-fill-mode: both;
       min-width: $minWidth;
+      background-color: var(--dropdown-bg);
       &.show{
          display: block;
          margin-top: $mTop;
       }
       .dropdown-divider{
-         border-top: 1px solid var(--base-border);
+         border-top: 1px solid var(--dropdown-border);
       }
       .dropdown-item{
          font-size: 14px;
@@ -47,12 +48,12 @@
          }
          &:hover{
             background-color: var(--base-drop-list-hover);
-            color : var(--base-color);
+            color : var( --base-drop-list-hover-color);
          }
          &:focus{
             box-shadow: none;
-            background-color: var(--base-color);
-            color : var( --white);
+            background-color: var(--base-drop-list-hover);
+            color : var(--base-drop-list-hover-color);
          }
          .icon{
             .z-icon{
@@ -82,7 +83,7 @@
          }
       }
       .drop-footer{
-         border-top: 1px solid var(--base-border);
+         border-top: 1px solid var(--dropdown-border);
          border-bottom-left-radius: 10px;
          border-bottom-right-radius: 10px;
          padding: 10px 15px;
@@ -94,7 +95,7 @@
             text-align: center;
             display: inline-block;
             width: max-content;
-            @include base-btn;
+            @include light-base-btn;
             .icon{
                .z-icon{
                   margin-top: 0px;

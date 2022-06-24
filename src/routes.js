@@ -12,5 +12,6 @@ export const ARouter = {
    Badges: { path: "/components/badges" },
    // User: {path: "/user"},
    UserList: {path: "/user/list"},
-   UserCreate: {path: "/user/create"}
+   UserCreate: {path: "/user/create"},
+   ChatOverview: { path: "/chat" },
 };

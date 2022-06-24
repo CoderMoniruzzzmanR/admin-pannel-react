@@ -1,8 +1,14 @@
 import React from 'react'
+import ContentHeader from './../ContentHeader';
 
 function DashboardOverview() {
   return (
-    <div>DashboardOverview</div>
+    <>
+      <ContentHeader/>
+      <div>
+         DashboardOverview
+      </div>
+    </>
   )
 }
 

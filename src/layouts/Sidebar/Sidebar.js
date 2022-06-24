@@ -108,6 +108,7 @@ function Sidebar({showClass, show, onClickSet}) {
                      <NavItem title="Badges" link={ARouter.Badges.path} icon={<Icon name="circle" className="multi-menu-icon"/>}/>
                   </CollapsableNavItem>
                   
+                  <NavItem title="Chat" link={ARouter.ChatOverview.path} icon={<Icon name="message" className="icon"/>}/>
                </Nav>
             </div>
             {/* Sidebar Footer*/}

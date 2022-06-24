@@ -16,6 +16,7 @@
 	width: 100%;
    order: 1;
    background-color: var(--sidebar-bg-color);
+   border-right: 1px solid var(--sidebar-border-color);
 }
 .sidebar-header{
    position: relative;
@@ -296,23 +297,29 @@
 .sidebar{
    &.collapse:not(.show){
       display: block;
-      // transform: translateX(0%);
-      // transition: transform .3s ease-in-out;
+      width: 100%;
+      transition: width .4s ease-in-out;
    }
-  
+   &.show{
+     width: 0px;
+     transition: width .4s ease-in-out;
+     border-right: 0px;
+   }
 }
 
 @include devices(laptop) {
    .sidebar{
       transform: translate(-100%);
-      transition: transform .3s ease-in-out;
+      transition: transform .4s ease-in-out;
       &.collapse:not(.show){
+         width: 100%;
          transform: translate(-100%);
-         transition: transform .3s ease-in-out;
+         transition: transform .4s ease-in-out;
       }
       &.show{
+         width: 100%;
          transform :translate(0%);
-         transition: transform .3s ease-in-out;
+         transition: transform .4s ease-in-out;
       }
       .sidebar-header{
          .sidebar-close{   

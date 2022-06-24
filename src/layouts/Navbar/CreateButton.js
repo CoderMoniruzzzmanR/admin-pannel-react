@@ -7,8 +7,9 @@ function CreateButton() {
     <>
       <li>
          <Dropdown>
-            <Dropdown.Toggle>
-               <span>Create <Icon name="cheveron-down"/></span>
+            <Dropdown.Toggle className="plus-icon">
+               <span className="plus"><Icon name="plus"/></span>
+               <span className="text-icon">Create<Icon name="cheveron-down"/></span>
             </Dropdown.Toggle>
             <Dropdown.Menu>
                <Dropdown.Item href="#/"><span className="icon"><Icon name="check-square"/></span>New Task</Dropdown.Item>

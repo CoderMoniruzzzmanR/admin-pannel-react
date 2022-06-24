@@ -15,6 +15,7 @@ import BootstrapTables from "./pages/tables/BootstrapTables";
 import UserList from './pages/user/UserList';
 import UserCreate from './pages/user/UserCreate';
 import NotFound from './pages/NotFound';
+import Chat from './pages/chat/Chat';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
             <Route path={ARouter.DocsOverview.path} element={<DocsOverview/>} />
             <Route path={ARouter.DocsDownload.path} element={<DocsDownload/>} />
             <Route path={ARouter.DocsQuickStart.path} element={<DocsQuickStart/>} />
+            <Route path={ARouter.ChatOverview.path} element={<Chat/>} />
          </Route>
          <Route path="*" element={<NotFound />} />
       </Routes>

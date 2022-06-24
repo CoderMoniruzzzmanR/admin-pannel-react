@@ -1,55 +1,6 @@
-body{
-   box-sizing: border-box;
-   font-family: $base_font_family;
-   background-color: var(--body-bg);
-}
+// .light-theme{
+// }
 
-*{
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
-   outline: 0;
-}
-h1,
-h2,
-h3,
-h4{
-   font-family: $josefin_font_family;
-   margin-bottom: 0px;
-}
-a{
-   font-family: $poppins_font_family;
-   &:focus,&:hover{
-      border: none;
-      box-shadow: none;
-   }
-}
-:root{
-   // --sidebar-border-color : #131d35;
-   --body-bg: #f5f6fa;
-   --base-border: rgba(46,54,80,.125);
-   --base-heading-font-color : #5e5873;
-   --base-font-color : #6e6b7b;
-   --base-color: #6259ca;
-   --base-bg-btn : #eaefff;
-   --bg-light-primary: #eaefff;
-   --bg-primary: #6259ca;
-   --btn-primary-color: #ffff;
-   --bgbtn-primary-color: #ffff;
-   --base-active : #6259ca;
-   --base-drop-list-hover : rgba(115,103,240,.12);
-   --white : white;
-   --navbar-bg: white;
-   --footer-bg: white;
-   --bg-color : #f5f6fa;
-   --base-icon-color : #5e5873;
-   --base-text-color : #5e5873;
-   --bs-yellow: #fea246;
-   --bs-blue: #50a5f1;
-   --bs-red: #ee335e;
-   --bs-green: #00d97e;
-   --bs-success: #b8d935;
-}
 .semi-light{
    --sidebar-bg-color : #212130;
    --sidebar-border-color : #2e2e42;
@@ -63,11 +14,115 @@ a{
    --sidebar-drop-item-color: #d0d2d6;
    --sidebar-drop-bg: #17171E;
    --sidebar-user-item-bgcolor: #212130;
+
+
+   --body-bg: #f5f6fa;
+   --base-border: rgba(46,54,80,.125);
+   --base-heading-font-color : #5e5873;
+   --base-font-color : #6e6b7b;
+   --base-color: #6259ca;
+   --base-bg-btn : #eaefff;
+   --bg-light-primary: #eaefff;
+   --bg-primary: #6259ca;
+   --btn-primary-color: #ffff;
+   --bgbtn-primary-color: #ffff;
+   --base-active : #6259ca;
+
+   --base-drop-list-hover : rgba(115,103,240,.12);
+   --base-drop-list-hover-color : #6259ca;
+
+   --white : white;
+   --navbar-bg: white;
+   --footer-bg: white;
+   --bg-color : #f5f6fa;
+  
+   --base-text-color : #5e5873;
+   --bs-yellow: #fea246;
+   --bs-blue: #50a5f1;
+   --bs-red: #ee335e;
+   --bs-green: #00d97e;
+   --bs-success: #b8d935;
+
+   --dropdown-bg : white;
+   --dropdown-border: rgba(46,54,80,.125);
+
+   --input-border : rgba(46,54,80,.125);
+   --input-bg: #f5f6fa;
+   --input-color : #5e5873;
+
+   --input-btn-bg: #6259ca;
+   --input-btn-color: #ffff;
+   --input-btn-border: #6259ca;
+
+
+   --input-light-btn-bg: #eaefff;
+   --input-light-btn-color: #6259ca;
+   --input-light-btn-border: #eaefff;
+    //icon
+    --icon-bg: #f5f6fa;
+    --icon-border : rgba(46,54,80,.125);
+    --base-icon-color : #5e5873;
+
+    //base
+    --base-text-color : #5e5873;
 }
 
-// .light-theme{
+.dark-theme{
+   --body-bg: #17171E;
+   --sidebar-bg-color : #212130;
+   --sidebar-border-color : #2e2e42;
+   --sidebar-menu-item-border: #2e2e42;
+   --sidebar-menu-item-color: #d0d2d6;
+   --sidebar-menu-active-bgcolor : #17171E;
+   --sidebar-menu-active-color : #d0d2d6;
+   --sidebar-menu-active-icon-color : #6259ca;
+   --sidebar-user-bgcolor: #6259ca;
+   --sidebar-user-item-color: white;
+   --sidebar-drop-item-color: #d0d2d6;
+   --sidebar-drop-bg: #17171E;
+   --sidebar-user-item-bgcolor: #212130;
 
-// }
-// .dark-theme{
+
+   --base-color: #6259ca;
+   --base-bg-btn : #eaefff;
+   --bg-light-primary: #eaefff;
+   --bg-primary: #6259ca;
+   --btn-primary-color: #ffff;
+   --bgbtn-primary-color: #ffff;
+   --base-active : #6259ca;
+
+   --navbar-bg: #212130;
+   --footer-bg: #212130;
+   --base-border: #2e2e42;
+   //icon
+   --icon-bg: #17171E;
+   --icon-border : #2e2e42;
+   --base-icon-color : #d0d2d6;
+   //dropdown
+   --dropdown-bg : #212130;
+   --dropdown-border: #2e2e42;
+   --base-drop-list-hover : rgba(115,103,240,.12);
+   --base-drop-list-hover-color : #6259ca;
+   //input field
+   --input-border : #17171E;
+   --input-bg: #17171E;
+   --input-color : #d0d2d6;
+   //input btn
+   --input-btn-bg: #6259ca;
+   --input-btn-color: #ffff;
+   --input-btn-border: #6259ca;
+   //base
+   --bg-color : #17171E;
+   --base-text-color : #d0d2d6;
+   
+   --base-heading-font-color : #d0d2d6;
   
-// }
+   --base-font-color : #b4b7bd;
+   --bs-yellow: #fea246;
+   --bs-blue: #50a5f1;
+   --bs-red: #ee335e;
+   --bs-green: #00d97e;
+   --bs-success: #b8d935;
+}
+
+

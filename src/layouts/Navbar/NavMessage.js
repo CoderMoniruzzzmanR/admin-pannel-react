@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function NavMessage() {
   return (
     <li className="nav-message">
-      <Link to="/">
+      <Link to="/chat">
          <div  className="icon-drop">
             <Icon name="message" className="icon"/>
             <span className="unread"></span>

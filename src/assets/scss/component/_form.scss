@@ -1,4 +1,4 @@
-@mixin BasicInput($width, $height, $boderRedius,$borderColor,$color, $hoverBoder, $padding) {
+@mixin BasicInput($width, $height,$bg,$boderRedius,$borderColor,$color, $hoverBoder, $padding) {
    width: $width;
    height: $height;
    font-size: 14px;
@@ -7,6 +7,7 @@
    border: $borderColor;
    padding: $padding;
    border-radius: $boderRedius;
+   background-color: $bg;
    color: $color;
    &:focus{
       box-shadow: none;

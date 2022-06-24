@@ -1,18 +1,26 @@
 @import '../responsive';
 
-// .app{
-//    display: flex;
-//    flex-direction: row;
-// }
+
+
+
+
+.app{
+  background-color: var(--body-bg);
+  color: var(--base-text-color);
+}
+
 
 .wrapper{
    height: 100vh;
+   overflow: hidden;
    order: 3;
    flex: 1 1;
-   max-width: calc(100% - 270px);
+   width: calc(100% - 270px);
    margin-left: 270px;
-   // padding: 0px 25px;
-  
+  &.collapase-in{
+   width: calc(100% - 0px);
+   margin-left: 0px;
+  }
 }
 .avatar{
    position: relative;
@@ -27,9 +35,16 @@
       right: 0px;
    }
 }
+.main-content{
+   padding: 25px 10px;
+}
 @include devices(laptop) {
    .wrapper{
-      max-width: calc(100% - 0px);
+      width: calc(100% - 0px);
       margin-left: 0px;
+      &.collapase-in{
+         width: calc(100% - 0px);
+         margin-left: 0px;
+      }
    }
 }
