@@ -1,5 +1,5 @@
 @import './btn';
-
+@import './_animation';
 .dropdown{
    .dropdown-toggle{
       &::after{
@@ -106,16 +106,7 @@
       }
    }
 }
-@keyframes DropDownSlide {
-   100% {
-      -webkit-transform: translateY(0px);
-      transform: translateY(0px);
-   }
-   0% {
-      -webkit-transform: translateY(30px);
-      transform: translateY(30px);
-   }
-}
+
 
 @mixin drop-content-button{
    display: flex;

@@ -1,0 +1,27 @@
+@mixin pro-breadcrumb {
+   .breadcrumb{
+      margin-bottom: 0px;
+      .breadcrumb-item {
+         font-size: 14px;
+         color: var(--base-color);
+         a{
+            color: var(--base-color);
+            text-decoration: none;
+         }
+         +{
+            .breadcrumb-item{
+               &::before{
+                  content: ">";
+                  color: var(--breadcrumb-divider-color)
+               }
+            }
+          }
+          &.active{
+            color: var(--breadcrumb-item-active-color);
+          }
+      }
+   }
+}
+.pro-breadcrumb{
+   @include pro-breadcrumb;
+}

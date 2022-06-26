@@ -39,6 +39,13 @@
       @content;
       }
    }
+
+   @if $breakpoint == midmobile {
+      @media only screen and (max-width: 575px) {
+      @content;
+      }
+   }
+
    @if $breakpoint == smallmobile {
       @media only screen and (max-width: 480px) {
       @content;

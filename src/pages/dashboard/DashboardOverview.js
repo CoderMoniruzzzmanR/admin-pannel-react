@@ -1,10 +1,15 @@
 import React from 'react'
 import ContentHeader from './../ContentHeader';
 
+
+const pageTitle = "Dashboard Overview";
+
 function DashboardOverview() {
   return (
     <>
-      <ContentHeader/>
+      <ContentHeader
+      pageTitle={pageTitle}
+      />
       <div>
          DashboardOverview
       </div>

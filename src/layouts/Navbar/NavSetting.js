@@ -9,6 +9,7 @@ function NavSetting() {
       className="icon"
       />
       </button>
+      <div className="setting-content"></div>
    </li>
   )
 }

@@ -9,6 +9,8 @@
 @import "./core";
 @import "./layouts/layouts";
 @import "./theme/default";
+@import "./component/card";
+@import "./component/table";
 @import "./responsive";
 *{
    box-sizing: border-box;

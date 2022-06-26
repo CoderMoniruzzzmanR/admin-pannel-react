@@ -9,8 +9,6 @@ import LogoImg from "../../assets/img/logo-mobile.svg";
 import {Link } from "react-router-dom";
 
 function Header({moodTheme, showDarkClass, onToggleClick, showClass}) {
-   const [show, setShow] = useState(false);
-   
   return (
    <div className="navigation-full">
       <div className="container-fluid">

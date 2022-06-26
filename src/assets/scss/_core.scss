@@ -18,7 +18,9 @@
 
    --body-bg: #f5f6fa;
    --base-border: rgba(46,54,80,.125);
+
    --base-heading-font-color : #5e5873;
+
    --base-font-color : #6e6b7b;
    --base-color: #6259ca;
    --base-bg-btn : #eaefff;
@@ -65,6 +67,30 @@
 
     //base
     --base-text-color : #5e5873;
+
+    //
+    --breadcrumb-divider-color : #6e6b7b;
+    --breadcrumb-item-active-color : #5e5873;
+   //card 
+   --card-border-color : rgba(46,54,80,.125);
+   --card-card-bg : white;
+   --card-color : #6e6b7b;
+   --card-cap-color : #5e5873;
+   --card-header-bg : white;
+   --card-body-bg : white;
+
+   //table
+   --table-cap-color : #5e5873;
+   --table-color : #6e6b7b;
+   --table-head-bg-light : #f5f5f9;
+   --table-light-color : #5e5873;
+   --table-head-bg-dark : #212529;
+   --table-dark-color: #d0d2d6 ; 
+   --table-bg : white ;
+   --table-body-bg : white ;
+   --table-striped-bg: #f9fafb;
+   --table-hover-bg: #f9fafb;
+   --table-border-color : rgba(46,54,80,.125);
 }
 
 .dark-theme{
@@ -111,10 +137,34 @@
    --input-btn-bg: #6259ca;
    --input-btn-color: #ffff;
    --input-btn-border: #6259ca;
+    //card 
+    --card-border-color : #2e2e42;
+    --card-card-bg : #212130;
+    --card-color : #b4b7bd;
+    --card-cap-color : #d0d2d6;
+    --card-header-bg : #212130;
+    --card-body-bg : #212130;
+    //table
+    --table-cap-color : #d0d2d6;
+    --table-color : #b4b7bd;
+    --table-head-bg-light : rgba(115,103,240,0.1);
+    --table-light-color : #b4b7bd;
+    --table-head-bg-dark : #212529;
+    --table-dark-color: #d0d2d6 ; 
+    --table-bg : #212130 ;
+    --table-body-bg : #212130 ;
+    --table-striped-bg: #2e2e42;
+    --table-hover-bg: #2e2e42;
+    --table-border-color : #2e2e42 ;
    //base
    --bg-color : #17171E;
    --base-text-color : #d0d2d6;
    
+   --base-padding-left : 25px;
+   --base-padding-right : 25px;
+   --base-padding-top : 25px;
+   --base-padding-bottom : 25px;
+
    --base-heading-font-color : #d0d2d6;
   
    --base-font-color : #b4b7bd;
@@ -123,6 +173,7 @@
    --bs-red: #ee335e;
    --bs-green: #00d97e;
    --bs-success: #b8d935;
+
 }
 
 

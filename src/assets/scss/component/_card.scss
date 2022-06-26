@@ -1,0 +1,39 @@
+.card{
+   --border-radius : 10px;
+   --card-font-size : 16px;
+   --card-font-weight : 500;
+   --card-font-family : 'Poppins', sans-serif;
+   --card-cap-font-size : 18px;
+   --card-cap-font-weight : 600;
+   --card-cap-font-family : 'Josefin Sans', sans-serif;
+   --card-box-shadow : 0 4px 24px 0 rgb(34 41 47 / 10%);
+   border: none;
+   border-radius: var(--border-radius);
+   color: var( --card-color);
+   box-shadow: var(--card-box-shadow);
+   background-color: var(--card-card-bg);
+   margin-bottom: 25px;
+   .card-header{
+      font-size: var(--card-cap-font-size);
+      font-weight: var(--card-cap-font-weight);
+      font-family: var(--card-cap-font-family);
+      border-bottom : 1px solid var(--card-border-color);
+      color: var( --card-cap-color);
+      background-color: var(--card-header-bg);
+      padding: 1rem 1rem;
+      h2,h3,h4,h5,h6{
+         font-size: var(--card-cap-font-size);
+         font-weight: var(--card-cap-font-weight);
+         font-family: var(--card-cap-font-family);
+         color: var( --card-cap-color);
+      }
+      &:first-child{
+         border-radius: var(--border-radius) var(--border-radius) 0px 0px;
+      }
+   }
+   .card-body{
+      padding: 1rem 1rem;
+      border-radius: 0px 0px var(--border-radius) var(--border-radius);
+      background-color: var(--card-body-bg);
+   }
+}

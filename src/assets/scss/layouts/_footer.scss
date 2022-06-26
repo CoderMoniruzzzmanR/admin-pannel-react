@@ -1,5 +1,38 @@
 .footer-full{
-   height: 70px;
+   min-height: 70px;
    border-top: 1px solid var(--base-border);
    background-color: var(--footer-bg);
+   padding: 0px 10px;
+   display: flex;
+   align-items: center;
+}
+.footer-content{
+   display: flex;
+   text-align: center;
+   align-items: center;
+   justify-content: space-between;
+   flex-direction: row;
+   p{
+      margin: 0px;
+      font-size: 14px;
+      a{
+         color: var(--base-color);
+      }
+   }
+}
+
+@include devices(tablet) {
+   .footer-full{
+      height: auto;
+      padding: 15px 10px;
+   }
+   .footer-content{
+      flex-direction: column;
+      p{
+         margin-bottom: 0px;
+         &:last-child{
+            margin-bottom: 0px;
+         }
+      }
+   }
 }

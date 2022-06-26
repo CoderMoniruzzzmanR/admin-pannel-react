@@ -17,6 +17,7 @@
    order: 1;
    background-color: var(--sidebar-bg-color);
    border-right: 1px solid var(--sidebar-border-color);
+   z-index: 9999;
 }
 .sidebar-header{
    position: relative;
@@ -29,9 +30,9 @@
    border-bottom: 1px solid var(--sidebar-border-color);
    display: flex;
    align-items: center;
-   height: 70px;
+   height: 80px;
    padding: 5px 25px;
-   z-index: 999;
+   z-index: 9999;
    justify-content: space-between;
    .sidebar-close{   
       display: none;
@@ -166,134 +167,134 @@
       margin-right: 10px;
    }
 }
-.user-drodown{
-   position: fixed;
-   bottom: 0;
-   max-width: 270px;
-   width: 100%;
-   z-index: 999;
-   border-top: 1px solid var( --sidebar-border-color);
-   .sidebar-navbar-user{
-      overflow: hidden;
-      padding: 20px 25px;
-      display: flex;
-      align-items: center;
-      border: none;
-      height: 70px;
-      width: 100%;
-      border-radius: 0px;
-      background-color: var(--sidebar-user-bgcolor);
-      z-index: 999;
-      &:focus{
-         box-shadow: none;
-         border: none;
-      }
-      .user{
-         display: inline-flex;
-         align-items: center;
-         img {
-            width: 40px;
-            height: 40px;
-            border-radius:15px;
-         }
-         .user-info {
-            margin-left: 10px;
-            line-height: 14px;
-            text-align: left;
-            h3 {
-               text-transform: capitalize;
-               font-size: 16px;
-               margin-bottom: 0px;
-               color: var(--sidebar-user-item-color);
-            }
-            span {
-               text-transform: capitalize;
-               font-size: 13px;
-               color: var(--sidebar-user-item-color);
-            }
-         }
-      }
-      .expand-icon{
-         text-align: center;
-         margin-left: auto;
-         color: var(--sidebar-user-item-color);
-         font-size: 20px;
-      }
-   }
-   .dropdown-toggle{
-      &::after{
-         display: none;
-      }
-   }
-   .dropdown-menu{
-      display: block;
-      visibility: hidden;
-      opacity: 0;
-      left: 15px !important;
-      box-sizing:border-box;
-      max-width: calc(270px - 30px);
-      width: 100%;
-      z-index: 99;
-      margin-bottom: -100px;
-      transition-timing-function: ease-out;
-      transition: all ease-out 0.1s;
-      background-color: var(--sidebar-drop-bg);
-      // border: 1px solid var(--sidebar-border-color);
-      border: none;
-      border-radius: 0.95rem;
-      padding: 0px;
-      font-size: 14px;
-      .drop-heading{
-         padding: 10px 15px;
-         border-bottom: 1px solid var(--base-border-color);
-         font-family: $poppins_font_family;
-         color: var(--sidebar-drop-item-color);
-         border-top-left-radius: 0.95rem;
-         border-top-right-radius: 0.95rem;
-         border-bottom: 1px solid var(--sidebar-menu-item-border);
-      }
-      .drop-items{
-         padding: 10px 15px;
-         .dropdown-item{
-            padding: 10px 15px;
-            color: var(--sidebar-drop-item-color);
-            border-radius: 0.95rem;
-            &:hover, &:focus{
-               background-color: var(--sidebar-user-item-bgcolor);
-            }
-         }
-      }
-      .drop-footer{
-         border-top: 1px solid var(--sidebar-menu-item-border);
-         border-bottom-left-radius: 0.95rem;
-         border-bottom-right-radius: 0.95rem;
-         padding: 10px 15px;
-         text-align: center;
-         .dropdown-item{
-            padding: 0px 15px;
-            color: var(--sidebar-user-item-color);
-            background-color: var(--sidebar-user-bgcolor);
-            line-height: 40px;
-            border-radius: 0.95rem;
-            text-align: center;
-            display: inline-block;
-            width: max-content;
-            .icon{
-               font-size: 20px;
-               margin-top: -5px;
-               margin-right: 7px;
-            }      
-         }
-      }
-      &.show{
-         display: block;
-         visibility: visible;
-         opacity: 1;
-         margin-bottom: 0px;
-      }
-   }
+// .user-drodown{
+//    position: fixed;
+//    bottom: 0;
+//    max-width: 270px;
+//    width: 100%;
+//    z-index: 999;
+//    border-top: 1px solid var( --sidebar-border-color);
+//    .sidebar-navbar-user{
+//       overflow: hidden;
+//       padding: 20px 25px;
+//       display: flex;
+//       align-items: center;
+//       border: none;
+//       height: 70px;
+//       width: 100%;
+//       border-radius: 0px;
+//       background-color: var(--sidebar-user-bgcolor);
+//       z-index: 999;
+//       &:focus{
+//          box-shadow: none;
+//          border: none;
+//       }
+//       .user{
+//          display: inline-flex;
+//          align-items: center;
+//          img {
+//             width: 40px;
+//             height: 40px;
+//             border-radius:15px;
+//          }
+//          .user-info {
+//             margin-left: 10px;
+//             line-height: 14px;
+//             text-align: left;
+//             h3 {
+//                text-transform: capitalize;
+//                font-size: 16px;
+//                margin-bottom: 0px;
+//                color: var(--sidebar-user-item-color);
+//             }
+//             span {
+//                text-transform: capitalize;
+//                font-size: 13px;
+//                color: var(--sidebar-user-item-color);
+//             }
+//          }
+//       }
+//       .expand-icon{
+//          text-align: center;
+//          margin-left: auto;
+//          color: var(--sidebar-user-item-color);
+//          font-size: 20px;
+//       }
+//    }
+//    .dropdown-toggle{
+//       &::after{
+//          display: none;
+//       }
+//    }
+//    .dropdown-menu{
+//       display: block;
+//       visibility: hidden;
+//       opacity: 0;
+//       left: 15px !important;
+//       box-sizing:border-box;
+//       max-width: calc(270px - 30px);
+//       width: 100%;
+//       z-index: 99;
+//       margin-bottom: -100px;
+//       transition-timing-function: ease-out;
+//       transition: all ease-out 0.1s;
+//       background-color: var(--sidebar-drop-bg);
+//       // border: 1px solid var(--sidebar-border-color);
+//       border: none;
+//       border-radius: 0.95rem;
+//       padding: 0px;
+//       font-size: 14px;
+//       .drop-heading{
+//          padding: 10px 15px;
+//          border-bottom: 1px solid var(--base-border-color);
+//          font-family: $poppins_font_family;
+//          color: var(--sidebar-drop-item-color);
+//          border-top-left-radius: 0.95rem;
+//          border-top-right-radius: 0.95rem;
+//          border-bottom: 1px solid var(--sidebar-menu-item-border);
+//       }
+//       .drop-items{
+//          padding: 10px 15px;
+//          .dropdown-item{
+//             padding: 10px 15px;
+//             color: var(--sidebar-drop-item-color);
+//             border-radius: 0.95rem;
+//             &:hover, &:focus{
+//                background-color: var(--sidebar-user-item-bgcolor);
+//             }
+//          }
+//       }
+//       .drop-footer{
+//          border-top: 1px solid var(--sidebar-menu-item-border);
+//          border-bottom-left-radius: 0.95rem;
+//          border-bottom-right-radius: 0.95rem;
+//          padding: 10px 15px;
+//          text-align: center;
+//          .dropdown-item{
+//             padding: 0px 15px;
+//             color: var(--sidebar-user-item-color);
+//             background-color: var(--sidebar-user-bgcolor);
+//             line-height: 40px;
+//             border-radius: 0.95rem;
+//             text-align: center;
+//             display: inline-block;
+//             width: max-content;
+//             .icon{
+//                font-size: 20px;
+//                margin-top: -5px;
+//                margin-right: 7px;
+//             }      
+//          }
+//       }
+//       &.show{
+//          display: block;
+//          visibility: visible;
+//          opacity: 1;
+//          margin-bottom: 0px;
+//       }
+//    }
   
-}
+// }
 .sidebar{
    &.collapse:not(.show){
       display: block;
