@@ -45,8 +45,14 @@
    --bs-green: #00d97e;
    --bs-success: #b8d935;
 
+   //dropdown
    --dropdown-bg : white;
    --dropdown-border: rgba(46,54,80,.125);
+   --base-drop-list-hover : rgba(115,103,240,.12);
+   --base-drop-list-hover-color : #6259ca;
+   --table-dropdown-bg : white;
+   --box-shadow-dropdown: 0 2px 30px rgb(0 0 0 / 10%);
+
 
    --input-border : rgba(46,54,80,.125);
    --input-bg: #f5f6fa;
@@ -91,6 +97,7 @@
    --table-striped-bg: #f9fafb;
    --table-hover-bg: #f9fafb;
    --table-border-color : rgba(46,54,80,.125);
+   //badge 
 }
 
 .dark-theme{
@@ -124,11 +131,16 @@
    --icon-bg: #17171E;
    --icon-border : #2e2e42;
    --base-icon-color : #d0d2d6;
+
    //dropdown
    --dropdown-bg : #212130;
    --dropdown-border: #2e2e42;
    --base-drop-list-hover : rgba(115,103,240,.12);
    --base-drop-list-hover-color : #6259ca;
+   --box-shadow-dropdown: 0 2px 30px rgb(0 0 0 / 32%);
+   --table-dropdown-bg : #212130;
+
+
    //input field
    --input-border : #17171E;
    --input-bg: #17171E;

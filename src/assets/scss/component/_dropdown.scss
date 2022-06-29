@@ -1,37 +1,30 @@
 @import './btn';
 @import './_animation';
+
 .dropdown{
    .dropdown-toggle{
       &::after{
          display: none;
       }
-   }
-}
-@mixin drop-menu($minWidth, $mTop ){
-   .dropdown-toggle{
       .z-icon{
          margin-right: -6px;
          width: 15px;
          height: 15px
       }
    }
+   .dropdown-divider{
+      border-top: 1px solid var(--dropdown-border);
+   }
    .dropdown-menu{
-      box-shadow: 0 2px 30px rgb(0 0 0 / 8%);
+      box-shadow: var(--box-shadow-dropdown);
       border: none;    
       padding: 0px;
       border-radius: 10px;
-      animation-name: DropDownSlide;
-      animation-duration: .3s;
-      animation-fill-mode: both;
-      min-width: $minWidth;
       background-color: var(--dropdown-bg);
       &.show{
          display: block;
-         margin-top: $mTop;
       }
-      .dropdown-divider{
-         border-top: 1px solid var(--dropdown-border);
-      }
+      
       .dropdown-item{
          font-size: 14px;
          font-family: $poppins_font_family;
@@ -103,6 +96,18 @@
                }
             }
          }
+      }
+   }
+}
+
+@mixin drop-menu($minWidth, $mTop ){
+   .dropdown-menu{
+      animation-name: DropDownSlide;
+      animation-duration: .3s;
+      animation-fill-mode: both;
+      min-width: $minWidth;
+      &.show{
+         margin-top: $mTop;
       }
    }
 }

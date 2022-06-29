@@ -1,3 +1,11 @@
+.button-group{
+   display: flex;
+   &:nth-child(n+1){
+      margin-left: 10px;
+   }
+}
+
+
 @mixin base-btn{
    background-color: var(--base-bg-btn);
    color: var(--base-color);

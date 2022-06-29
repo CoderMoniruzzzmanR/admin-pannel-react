@@ -2,7 +2,6 @@
    font-size: 16px;
    width: 20px;
    height: 20px;
-   color: var(--base-icon-color);
 }
 
 .icon{
@@ -11,4 +10,9 @@
       margin-top: -5px;
       font-size: 16px;
    }
+}
+
+.thumb-xs{
+   width: 30px;
+   height: 30px;
 }

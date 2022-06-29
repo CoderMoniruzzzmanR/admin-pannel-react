@@ -87,6 +87,7 @@ function Sidebar({showClass, show, onClickSet}) {
                  
                   <CollapsableNavItem eventKey="tables/" title="Tables" icon={<Icon name="table" className="icon"/>}>
                      <NavItem title="Bootstrap Table" link={ARouter.bootstrapTables.path} icon={<Icon name="circle" className="multi-menu-icon"/>}/>
+                     <NavItem title="DataTable" link={ARouter.dataTableTables.path} icon={<Icon name="circle" className="multi-menu-icon"/>}/>
                   </CollapsableNavItem>
                  
                   {/* <NavItem external title="Plugins" link="https://demo.themesberg.com/volt-pro-react/#/plugins/datatable" target="_blank" badgeText="Pro" icon="$" /> */}

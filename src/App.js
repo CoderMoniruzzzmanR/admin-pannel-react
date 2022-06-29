@@ -12,6 +12,7 @@ import Accordion from "./pages/components/Accordion";
 import Alerts from "./pages/components/Alerts";
 import Badges from "./pages/components/Badges";
 import BootstrapTable from "./pages/tables/Bootstrap";
+import DataTableTables from "./pages/tables/DataTable";
 import UserList from './pages/user/UserList';
 import UserCreate from './pages/user/UserCreate';
 import NotFound from './pages/NotFound';
@@ -24,6 +25,7 @@ function App() {
          <Route element={<Layouts/>}>
             <Route exact path={ARouter.DashboardOverview.path} element={<DashboardOverview/>} />
             <Route path={ARouter.bootstrapTables.path} element={<BootstrapTable/>} />
+            <Route path={ARouter.dataTableTables.path} element={<DataTableTables/>} />
             <Route path={ARouter.Accordions.path} element={<Accordion/>} />
             <Route path={ARouter.Alerts.path} element={<Alerts/>} />
             <Route path={ARouter.Badges.path} element={<Badges/>} />
