@@ -38,6 +38,7 @@
                      &:last-child{
                         border-radius: 0px 0px 10px 0px;
                      }
+                     
                   }
                }
             }
@@ -64,11 +65,17 @@
             font-weight: var(--table-cap-font-weight);
             letter-spacing: 0.13px;
             text-transform: uppercase;
+            
          }
       }
    }
    tbody{
       tr{
+         td{
+            .t-bold{
+               font-weight: 600;
+            }
+         }
          &:last-child{
             td{
                border: none;
@@ -120,7 +127,19 @@
          }
       }
    }
-
+.table-btn-group{
+   a{
+      margin-right: 10px;
+      &:last-child{
+         margin-right: 0px;
+      }
+      color: var(--table-color);
+      .icon ,.z-icon{
+         width: 16px;
+         height: 16px;
+      }
+   }
+}
    @mixin iconbtnTable {
       .btn{
          &.icon-btn{

@@ -11,7 +11,7 @@ import DocsQuickStart from "./pages/documentation/DocsQuickStart";
 import Accordion from "./pages/components/Accordion";
 import Alerts from "./pages/components/Alerts";
 import Badges from "./pages/components/Badges";
-import BootstrapTable from "./pages/tables/Bootstrap";
+import BasicTable from "./pages/tables/BasicTables";
 import DataTableTables from "./pages/tables/DataTable";
 import UserList from './pages/user/UserList';
 import UserCreate from './pages/user/UserCreate';
@@ -24,7 +24,7 @@ function App() {
       <Routes>
          <Route element={<Layouts/>}>
             <Route exact path={ARouter.DashboardOverview.path} element={<DashboardOverview/>} />
-            <Route path={ARouter.bootstrapTables.path} element={<BootstrapTable/>} />
+            <Route path={ARouter.basicTables.path} element={<BasicTable/>} />
             <Route path={ARouter.dataTableTables.path} element={<DataTableTables/>} />
             <Route path={ARouter.Accordions.path} element={<Accordion/>} />
             <Route path={ARouter.Alerts.path} element={<Alerts/>} />

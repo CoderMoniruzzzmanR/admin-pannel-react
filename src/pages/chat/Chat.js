@@ -1,5 +1,5 @@
 import React from 'react'
-import ContentHeader from './../ContentHeader';
+import ContentHeader from 'src/components/common/ContentHeader';
 
 function Chat() {
   return (

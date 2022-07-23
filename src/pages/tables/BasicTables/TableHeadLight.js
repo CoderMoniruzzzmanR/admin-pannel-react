@@ -1,6 +1,6 @@
 import React from 'react';
 import {Table, Dropdown} from 'react-bootstrap';
-import Icon from '../../../shared/Icon';
+import Icon from 'src/shared/Icon';
 function TableHeadLight() {
    return (
       <div className="card">

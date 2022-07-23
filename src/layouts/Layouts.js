@@ -3,7 +3,7 @@ import {Outlet} from "react-router-dom";
 import Footer from './Footer/Footer';
 import Header from './Navbar/Header';
 import Sidebar from './Sidebar/Sidebar';
-import { ARouter } from ".././routes";
+import { ARouter } from "src/routes";
 
 export default () => {
    const [show, setShow] = useState(false);

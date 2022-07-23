@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import {Link, useLocation } from "react-router-dom";
 import SimpleBar from 'simplebar-react';
 import { CSSTransition } from 'react-transition-group';
-import { ARouter } from "../../routes";
+import { ARouter } from "src/routes";
 import { Nav, Badge, Button, Accordion, Navbar } from 'react-bootstrap';
-import Logo from '../../components/Logo';
-import LogoImg from "../../assets/img/logo4.svg";
+import Logo from 'src/components/Logo';
+import LogoImg from "src/assets/img/logo4.svg";
 // import SidebarFooter from './SidebarFooter';
-import Icon from '../../shared/Icon';
+import Icon from 'src/shared/Icon';
 
 function Sidebar({showClass, show, onClickSet}) {
    const location = useLocation();
@@ -86,7 +86,7 @@ function Sidebar({showClass, show, onClickSet}) {
                   <NavItem title="Dashboard" link={ARouter.DashboardOverview.path} icon={<Icon name="home" className="icon"/>}/>
                  
                   <CollapsableNavItem eventKey="tables/" title="Tables" icon={<Icon name="table" className="icon"/>}>
-                     <NavItem title="Bootstrap Table" link={ARouter.bootstrapTables.path} icon={<Icon name="circle" className="multi-menu-icon"/>}/>
+                     <NavItem title="Basic Table" link={ARouter.basicTables.path} icon={<Icon name="circle" className="multi-menu-icon"/>}/>
                      <NavItem title="DataTable" link={ARouter.dataTableTables.path} icon={<Icon name="circle" className="multi-menu-icon"/>}/>
                   </CollapsableNavItem>
                  

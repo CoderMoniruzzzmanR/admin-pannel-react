@@ -1,11 +1,11 @@
 import React from 'react';
 import {Table, Dropdown} from 'react-bootstrap';
-import Icon from '../../../shared/Icon';
+import Icon from 'src/shared/Icon';
 
-import img1 from '../../../assets/img/thumb1.png';
-import img2 from '../../../assets/img/thumb2.png';
-import img3 from '../../../assets/img/thumb3.jpg';
-import img4 from '../../../assets/img/thumb4.png';
+import img1 from 'src/assets/img/thumb1.png';
+import img2 from 'src/assets/img/thumb2.png';
+import img3 from 'src/assets/img/thumb3.jpg';
+import img4 from 'src/assets/img/thumb4.png';
 
 
 
@@ -30,8 +30,8 @@ function TableBorderless() {
             <tbody>
                <tr>
                   <td>
-                     <img src={img1} alt="icon image" className="rounded-circle thumb-xs me-1"/>
-                     <span>Marcent</span>
+                     <img src={img1} alt="icon image" className="rounded-circle thumb-xs me-2"/>
+                     <span className='t-bold'>Marcent</span>
                   </td>
                   <td>$800</td>
                   <td>$227</td>
@@ -57,8 +57,8 @@ function TableBorderless() {
                </tr>
                <tr>
                   <td>
-                     <img src={img2} alt="icon image" className="rounded-circle thumb-xs me-1"/>
-                     <span>SoftByte</span>
+                     <img src={img2} alt="icon image" className="rounded-circle thumb-xs me-2"/>
+                     <span className='t-bold'>SoftByte</span>
                   </td>
                   <td>$700</td>
                   <td>$500</td>
@@ -84,8 +84,8 @@ function TableBorderless() {
                </tr>
                <tr>
                   <td>
-                     <img src={img3} alt="icon image" className="rounded-circle thumb-xs me-1"/>
-                     <span>FlexCorn</span>
+                     <img src={img3} alt="icon image" className="rounded-circle thumb-xs me-2"/>
+                     <span className='t-bold'>FlexCorn</span>
                   </td>
                   <td>$500</td>
                   <td>$117</td>
@@ -111,8 +111,8 @@ function TableBorderless() {
                </tr>
                <tr>
                   <td>
-                     <img src={img4} alt="icon image" className="rounded-circle thumb-xs me-1"/>
-                     <span>ForkStar</span>
+                     <img src={img4} alt="icon image" className="rounded-circle thumb-xs me-2"/>
+                     <span className='t-bold'>ForkStar</span>
                   </td>
                   <td>$560</td>
                   <td>$240</td>

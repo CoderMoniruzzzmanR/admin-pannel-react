@@ -1,5 +1,5 @@
 import React from 'react'
-import UserImg from "../../assets/img/user.jpg";
+import UserImg from "src/assets/img/user.jpg";
 import { BsChevronExpand, BsPower, BsCheck2Square } from "react-icons/bs";
 import { Dropdown } from 'react-bootstrap';
 import { FiUser, FiSettings , FiMail} from "react-icons/fi";

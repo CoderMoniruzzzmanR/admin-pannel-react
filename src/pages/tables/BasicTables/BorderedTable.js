@@ -1,6 +1,6 @@
 import React from 'react';
 import {Table, Dropdown} from 'react-bootstrap';
-import Icon from '../../../shared/Icon';
+import Icon from 'src/shared/Icon';
 
 function BorderedTable() {
    return (
@@ -14,19 +14,19 @@ function BorderedTable() {
             <Table responsive bordered>
                <thead>
                   <tr>
-                     <th>#</th>
-                     <th>First Name</th>
-                     <th>Last Name</th>
-                     <th>Username</th>
+                     <th>ID</th>
+                     <th>Name</th>
+                     <th>Position</th>
+                     <th>Salary</th>
                      <th>Action</th>
                   </tr>
                </thead>
                <tbody>
                   <tr>
                      <td>1</td>
-                     <td>Mark</td>
-                     <td>Otto</td>
-                     <td>@mdo</td>
+                     <td>Abul Hasan</td>
+                     <td>Associate Developer</td>
+                     <td>$450,870</td>
                      <td>
                         <Dropdown className="table-dropdown" align="down">
                            <Dropdown.Toggle 
@@ -49,8 +49,8 @@ function BorderedTable() {
                   <tr>
                      <td>2</td>
                      <td>Jacob</td>
-                     <td>Thornton</td>
-                     <td>@fat</td>
+                     <td>Account manager</td>
+                     <td>$450,870</td>
                      <td>
                         <Dropdown className="table-dropdown" align="down">
                            <Dropdown.Toggle 
@@ -72,8 +72,9 @@ function BorderedTable() {
                   </tr>
                   <tr>
                      <td>3</td>
-                     <td colSpan={2}>Larry the Bird</td>
-                     <td>@twitter</td>
+                     <td>Larry the Bird</td>
+                     <td>Senior Javascript Developer</td>
+                     <td>$55,300</td>
                      <td>
                         <Dropdown className="table-dropdown" align="down">
                            <Dropdown.Toggle 
@@ -96,8 +97,8 @@ function BorderedTable() {
                   <tr>
                      <td>4</td>
                      <td>Alex</td>
-                     <td>Hunter</td>
-                     <td>@hun</td>
+                     <td>Accountant</td>
+                     <td>$234,100</td>
                      <td>
                         <Dropdown className="table-dropdown" align="down">
                            <Dropdown.Toggle 

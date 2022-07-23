@@ -1,7 +1,7 @@
 export const ARouter = {
    // pages
    DashboardOverview: { path: "/" },
-   bootstrapTables: { path: "/tables/bootstrap-table" },
+   basicTables: { path: "/tables/basic-table" },
    dataTableTables: { path: "/tables/datatable" },
    // docs
    DocsOverview: { path: "/documentation/overview" },
