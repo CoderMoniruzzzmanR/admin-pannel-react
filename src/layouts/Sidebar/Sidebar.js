@@ -87,10 +87,8 @@ function Sidebar({showClass, show, onClickSet}) {
                  
                   <CollapsableNavItem eventKey="tables/" title="Tables" icon={<Icon name="table" className="icon"/>}>
                      <NavItem title="Basic Table" link={ARouter.basicTables.path} icon={<Icon name="circle" className="multi-menu-icon"/>}/>
-                     <NavItem title="DataTable" link={ARouter.dataTableTables.path} icon={<Icon name="circle" className="multi-menu-icon"/>}/>
                   </CollapsableNavItem>
-                 
-                  {/* <NavItem external title="Plugins" link="https://demo.themesberg.com/volt-pro-react/#/plugins/datatable" target="_blank" badgeText="Pro" icon="$" /> */}
+               
                  
                   {/* <Dropdown.Divider className="my-3 border-indigo" /> */}
                   <CollapsableNavItem eventKey="documentation/" title="Getting Started" icon={<Icon name="cube" className="icon"/>}>
